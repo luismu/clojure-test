@@ -1,5 +1,14 @@
 # Engineering Challenge
 
+## Solution
+### Problem 1
+I created file with name invoice_processor.clj with the function to solve problem 1 with a function named filter-invoice-items that takes an invoice as an argument, then using threading macro to thread the invoice through a series of transformations. It focuses on the :invoice/items vector, finally a filter function where each item will be checked with the conditions:
+ - At least one tax with :iva category and a rate of 19%. 
+ - At least one retention with :ret_fuente category and a rate of 1%.
+
+### Problem 2
+The file invoice_generator.clj contain the solution to problem 2, where there's a function with name generate-invoice, that takes a JSON file as input, uses the load-json function to load and parse the JSON data, and then validates it against the specified spec using s/valid?.
+
 ## Getting started
 
 This clojure challenge is made up of 3 questions that reflect the learning you accumulated for the past week. Complete the following instructions:
